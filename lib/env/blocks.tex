@@ -1,0 +1,26 @@
+% Definición de bloque de color
+
+\newtcolorbox{block}[1]{
+	before upper={\parindent0cm},
+	parbox=false,
+	colback=white,
+	colframe=block,
+	fonttitle=\color{white}\genfamily\bfseries,
+	title={#1},
+	arc=1mm,
+	arc is angular,
+	breakable
+	}
+
+\newtcolorbox{slab}[1]{
+	empty,
+	left=2cm,
+	before upper={\parindent0cm},
+	parbox=false,
+	coltitle=slab,
+	fonttitle=\genfamily\bfseries,
+	borderline horizontal={0.5mm}{0pt}{pastelred},
+	title={#1},
+	attach boxed title to top left,
+	breakable
+	}

@@ -1,0 +1,23 @@
+\documentclass[a4paper, 9pt, openany]{memoir} 
+\input{preamble}
+
+\titulo{Apuntes de \texttt{XXYYYY}}
+\autor{Autor}
+\date{\today}
+
+\begin{document}
+    \vspace{30pt}
+    \clearpage\maketitle
+    \thispagestyle{empty}
+    \newpage
+    \tableofcontents
+    \thispagestyle{index}  
+
+    \input{classes/clase1}
+   
+    
+    \nocite{*}
+    \bibliography{referencias}
+    \thispagestyle{fancy}
+    
+\end{document}
