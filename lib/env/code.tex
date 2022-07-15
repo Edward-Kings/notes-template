@@ -13,7 +13,7 @@
 \newenvironment{mintedcode}[1]
 {%
   \VerbatimEnvironment
-  \begin{mdframed}[backgroundcolor=code, linecolor=black, topline=false, bottomline=false, leftline=false, rightline=false, userdefinedwidth=\textwidth]
+  \begin{mdframed}[usetwoside=false, backgroundcolor=code, linecolor=black, topline=false, bottomline=false, leftline=false, rightline=false, userdefinedwidth=\textwidth]
   \begin{minted}[escapeinside=@@]{#1}%
 }
 {%
