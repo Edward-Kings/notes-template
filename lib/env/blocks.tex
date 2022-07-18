@@ -24,3 +24,34 @@
 	attach boxed title to top left,
 	breakable
 	}
+
+\newcounter{theorem}
+\renewcommand{\thetheorem}{\arabic{chapter}.\arabic{theorem}}
+\newtcbtheorem[auto counter, number within=chapter, number freestyle={\noexpand\arabic{chapter}.\noexpand\arabic{\tcbcounter}}]{theorem}{Teorema}{
+	before upper={\parindent0cm},
+	parbox=false,
+	colback=white,
+	colframe=block,
+	fonttitle=\color{white}\genfamily\bfseries,
+	description font=\itshape,
+	arc=1mm,
+	arc is angular,
+	breakable,
+	label separator=*
+	}{th}
+
+\newcounter{definition}
+\renewcommand{\thedefinition}{\arabic{chapter}.\arabic{theorem}}
+\newtcbtheorem[auto counter, number within=chapter, number freestyle={\noexpand\arabic{chapter}.\noexpand\arabic{\tcbcounter}}]{definition}{Definición}{
+	empty,
+	left=2cm,
+	before upper={\parindent0cm},
+	parbox=false,
+	coltitle=slab,
+	fonttitle=\genfamily\bfseries,
+	description font=\itshape,
+	borderline horizontal={0.5mm}{0pt}{pastelred},
+	attach boxed title to top left,
+	breakable,
+	label separator=*
+	}{def}
